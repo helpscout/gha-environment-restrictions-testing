@@ -1,0 +1,22 @@
+name: Run with Approval
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: hs-small
+    steps:
+    - name: Build
+      run: |
+          echo "Can run anytime, without limitations..."
+  against-test-environment-1-only:
+    runs-on: hs-small
+    environment: test-environment-1
+    steps:
+    - name: Build
+      run: |
+          echo "This will only run against production, and will obey any rules in place..."

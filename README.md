@@ -1,2 +1,3 @@
 # gha-environment-restrictions-testing
-A test repository for experimenting with environment restrictions
+
+This is a test repository to demonstrate how environment restrictions work within GitHub Actions.
