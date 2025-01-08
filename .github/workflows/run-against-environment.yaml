@@ -8,13 +8,14 @@ on:
 
 jobs:
   build:
-    runs-on: hs-small
+    runs-on: ubuntu-latest
     steps:
     - name: Build
       run: |
           echo "Can run anytime, without limitations..."
+
   against-test-environment-1-only:
-    runs-on: hs-small
+    runs-on: ubuntu-latest
     environment: test-environment-1
     steps:
     - name: Build
